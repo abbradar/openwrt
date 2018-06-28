@@ -9,7 +9,7 @@ SUBTARGETS:=mt7622 mt7623
 FEATURES:=squashfs nand ramdisk fpu
 MAINTAINER:=John Crispin <john@phrozen.org>
 
-KERNEL_PATCHVER:=4.14
+KERNEL_PATCHVER:=4.9
 
 include $(INCLUDE_DIR)/target.mk
 DEFAULT_PACKAGES += \

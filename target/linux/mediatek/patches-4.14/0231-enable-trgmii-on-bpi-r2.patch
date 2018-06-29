@@ -2,21 +2,21 @@ Index: linux-4.14.51/arch/arm/boot/dts/mt7623n-bananapi-bpi-r2.dts
 ===================================================================
 --- linux-4.14.51.orig/arch/arm/boot/dts/mt7623n-bananapi-bpi-r2.dts
 +++ linux-4.14.51/arch/arm/boot/dts/mt7623n-bananapi-bpi-r2.dts
-@@ -129,7 +129,7 @@
- 	gmac0: mac@0 {
+@@ -141,7 +141,7 @@
+ 	gmac1: mac@1 {
  		compatible = "mediatek,eth-mac";
- 		reg = <0>;
--		phy-mode = "trgmii";
-+		phy-mode = "rgmii";
+ 		reg = <1>;
+-		phy-mode = "rgmii";
++		phy-mode = "trgmii";
  
  		fixed-link {
  			speed = <1000>;
-@@ -218,7 +218,7 @@
- 					reg = <6>;
+@@ -206,7 +206,7 @@
+ 					reg = <5>;
  					label = "cpu";
- 					ethernet = <&gmac0>;
--					phy-mode = "trgmii";
-+					phy-mode = "rgmii";
+ 					ethernet = <&gmac1>;
+-					phy-mode = "rgmii";
++					phy-mode = "trgmii";
  
  					fixed-link {
  						speed = <1000>;

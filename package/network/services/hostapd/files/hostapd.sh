@@ -239,10 +239,11 @@ hostapd_common_add_bss_config() {
 	config_add_int mcast_rate
 	config_add_array basic_rate
 	config_add_array supported_rates
-	
 	config_add_boolean sae_require_mfp
 	
 	config_add_string 'owe_transition_bssid:macaddr' 'owe_transition_ssid:string'
+
+	config_add_int bss_load_update_period
 }
 
 hostapd_set_bss_options() {
